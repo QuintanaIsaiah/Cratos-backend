@@ -30,32 +30,25 @@ include("connection.php");
     }
 
     //Productos
-    insertarProductos("producto1","montaña","lorem",3,4);
+    insertarProductos("producto1","montanya","lorem",3,4);
     insertarProductos("producto2","natacion","lorem",3,4);
     insertarProductos("producto3","tierra","lorem",3,4);
     insertarProductos("producto4","tierra","lorem",3,4);
-    insertarProductos("producto5","montaña","lorem",3,4);
-    insertarProductos("producto7","natacion","lorem",3,4);
+    insertarProductos("producto5","montanya","lorem",3,4);
+    insertarProductos("producto6","natacion","lorem",3,4);
 
+    
+    
     //Hacemos consulta para mostrar todos los productos
-
     $conexion = $GLOBALS["conexion"];
 
     $consulta3 = 'SELECT * FROM productos;';
     $result3 = mysqli_query($conexion,$consulta3);
 
-    while($lista = mysqli_fetch_array($result3)){
-        
+    while($lista = mysqli_fetch_all($result3)){
         extract($lista);
-
-            $listado = [];
-            $listado[0] = $nombre;
-            $listado[1] = $categoria;
-            $listado[2] = $descripcion;
-            $listado[3] = $precio;
-            $listado[4] = $porcentaje_oferta;
-
-            echo(json_encode($listado));
+            
+            echo json_encode($lista);
     }
-
+    
 ?>
