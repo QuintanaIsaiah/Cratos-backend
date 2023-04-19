@@ -8,36 +8,6 @@ header("Access-Control-Allow-Origin: http://localhost:3000");
 
 
 include("connection.php");
-
-    //Creamos funcion para insertar productos, y si ya existen que no los cree
-    
-    function insertarProductos($nombre,$categoria,$descripcion,$precio,$porcentaje_precio){
-        include("connection.php");
-
-        $conexion = $GLOBALS["conexion"];
-
-        $consulta = 'SELECT * FROM productos WHERE nombre = "'.$nombre.'" ;';
-        $result = mysqli_query($conexion,$consulta);
-        
-        if(mysqli_num_rows($result) > 0){
-            //echo("Ya existe ");
-        }
-        else{
-            $consulta2 = 'INSERT INTO productos(nombre,categoria,descripcion,precio,porcentaje_oferta) VALUES ("'.$nombre.'","'.$categoria.'","'.$descripcion.'",'.$precio.','.$porcentaje_precio.');';
-            $result2 = mysqli_query($conexion,$consulta2);
-            //echo($result2);
-        }
-    }
-
-    //Productos
-    insertarProductos("producto1","montanya","lorem",3,4);
-    insertarProductos("producto2","natacion","lorem",3,4);
-    insertarProductos("producto3","tierra","lorem",3,4);
-    insertarProductos("producto4","tierra","lorem",3,4);
-    insertarProductos("producto5","montanya","lorem",3,4);
-    insertarProductos("producto6","natacion","lorem",3,4);
-
-    
     
     //Hacemos consulta para mostrar todos los productos
     $conexion = $GLOBALS["conexion"];

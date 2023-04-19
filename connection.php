@@ -72,4 +72,32 @@
     $res4 = mysqli_query($conexion,$consulta4);
         //echo($res4);
 
+        
+        //Creamos funcion para insertar productos, y si ya existen que no los cree
+
+        function insertarProductos($nombre,$categoria,$descripcion,$precio,$porcentaje_precio){
+
+            $conexion = $GLOBALS["conexion"];
+
+            $consulta99 = 'SELECT * FROM productos WHERE nombre = "'.$nombre.'" ;';
+            $result = mysqli_query($conexion,$consulta99);
+            
+            if(mysqli_num_rows($result) > 0){
+                //echo("Ya existe ");
+            }
+            else{
+                $consulta22 = 'INSERT INTO productos(nombre,categoria,descripcion,precio,porcentaje_oferta) VALUES ("'.$nombre.'","'.$categoria.'","'.$descripcion.'",'.$precio.','.$porcentaje_precio.');';
+                $result2 = mysqli_query($conexion,$consulta22);
+                //echo($result2);
+            }
+        }
+
+        //Productos
+        insertarProductos("producto1","montanya","lorem",3,4);
+        insertarProductos("producto2","natacion","lorem",3,4);
+        insertarProductos("producto3","tierra","lorem",3,4);
+        insertarProductos("producto4","tierra","lorem",3,4);
+        insertarProductos("producto5","montanya","lorem",3,4);
+        insertarProductos("producto6","natacion","lorem",3,4);
+
 ?>
