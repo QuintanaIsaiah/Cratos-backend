@@ -100,4 +100,23 @@
         insertarProductos("producto5","montanya","lorem",3,4);
         insertarProductos("producto6","natacion","lorem",3,4);
 
+    
+    //Creamos tabla carro
+    $consulta_c = 'CREATE TABLE IF NOT EXISTS carro (
+        id int auto_increment primary key,
+        nombre varchar(255),
+        categoria varchar(255),
+        descripcion varchar(255),
+        precio int,
+        porcentaje_oferta int    
+    );';
+
+    $result_c = mysqli_query($conexion,$consulta_c);
+    
+
+
+
+
+
+
 ?>
