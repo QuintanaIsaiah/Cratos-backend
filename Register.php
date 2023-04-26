@@ -5,7 +5,7 @@
     header("Content-Type: application/json; charset=UTF-8");
     header("Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-Width");
     header("Access-Control-Allow-Origin: http://localhost:3000");
-    
+
     //Cogemos el archivo JSON que nos envian del formulario, lo decodificamos y lo guardamos en una variable data
     //Imprimimos todo el contenido que nos llega del input (mirar en la consola:network:insertar.php    ahi se ven todos los movimientos de ida y de vuelta)
         //print_r(file_get_contents('php://input'));
