@@ -93,12 +93,14 @@
         }
 
         //Productos
-        insertarProductos("producto1","montanya","lorem",3,4);
-        insertarProductos("producto2","natacion","lorem",3,4);
-        insertarProductos("producto3","tierra","lorem",3,4);
-        insertarProductos("producto4","tierra","lorem",3,4);
-        insertarProductos("producto5","montanya","lorem",3,4);
-        insertarProductos("producto6","natacion","lorem",3,4);
+        insertarProductos("producto1","montanya","lorem",48,0);
+        insertarProductos("producto2","natacion","lorem",60,0);
+        insertarProductos("producto3","tierra","lorem",35,20);
+        insertarProductos("producto4","tierra","lorem",32,0);
+        insertarProductos("producto5","montanya","lorem",30,0);
+        insertarProductos("producto6","natacion","lorem",70,50);
+        insertarProductos("producto7","natacion","lorem",90,0);
+        insertarProductos("producto8","tierra","lorem",52,0);
 
     
     //Creamos tabla carro
