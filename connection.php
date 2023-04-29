@@ -33,7 +33,8 @@
         nombre varchar(255),
         correo varchar(255),
         edad int,
-        contrasenya varchar(255)
+        contrasenya varchar(255),
+        admin boolean default false
     );';
     $result = mysqli_query($conexion,$consulta);
         //echo($result);
@@ -59,7 +60,7 @@
                 //si el contador esta vacio, no hay usuaior y lo inserta
                 if($contador == ""){
                     
-                    $consulta3_1 = 'INSERT INTO usuarios(nombre,contrasenya) VALUES("admin","admin");';
+                    $consulta3_1 = 'INSERT INTO usuarios(nombre,contrasenya, admin) VALUES("admin","admin", true);';
 
                     $res3_1 = mysqli_query($conexion,$consulta3_1);
 
