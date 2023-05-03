@@ -29,20 +29,16 @@
 
     while ($resultList = mysqli_fetch_array($result)) {
         extract($resultList);
-        $response["resultado"] = $result;
+        $usuario = array(
+            "id" => $resultList["id"],
+            "nombre" => $resultList["nombre"],
+            "admin" => $resultList["admin"]
+        );
+        $response["resultado"] = $usuario;
         $response["code"] = 0;
         $response["message"] = "Usuario encontrado";
         
     }
-    
-    // if(mysqli_num_rows($result) > 0){
-    //     $response["code"] = 0;
-    //     $response["message"] = "Usuario encontrado";
-    // }
-    // else{
-    //     $response["code"] = 1;
-    //     $response["message"] = "Usuario no encontrado";
-    // }
 
     echo json_encode($response);
 ?>
