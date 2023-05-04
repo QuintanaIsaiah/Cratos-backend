@@ -15,7 +15,7 @@ include("connection.php");
     //Hacemos consulta para mostrar todos los productos
     $conexion = $GLOBALS["conexion"];
 
-    $consulta = 'DELETE FROM Carro WHERE id = '.$inputRecibido.';';
+    $consulta = 'DELETE FROM Carro_'.$inputRecibido[1].' WHERE id = '.$inputRecibido[0].';';
     $result = mysqli_query($conexion,$consulta);
 
     print_r($result);
