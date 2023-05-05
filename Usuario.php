@@ -8,10 +8,11 @@ header("Access-Control-Allow-Origin: http://localhost:3000");
 
 
 //$inputRecibido = json_decode(file_get_contents('php://input'));
-$inputRecibido = "David";
+$inputRecibido = "Alex";
 
 if($inputRecibido){
-    print_r($inputRecibido);
+    //print_r($inputRecibido);
+    echo json_encode($inputRecibido);
 }
 else{
     print_r("");
