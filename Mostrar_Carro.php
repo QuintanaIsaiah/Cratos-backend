@@ -14,12 +14,12 @@ include("connection.php");
     //Hacemos consulta para mostrar todos los productos
     $conexion = $GLOBALS["conexion"];
 
-    $consulta3 = 'SELECT * FROM Carro_'.$inputRecibido[0].';';
+    $consulta3 = 'SELECT * FROM Carro;';
     $result3 = mysqli_query($conexion,$consulta3);
 
     while($lista = mysqli_fetch_all($result3)){
         extract($lista);
             
             echo json_encode($lista);
-    }  
+    }
 ?>

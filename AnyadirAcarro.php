@@ -24,7 +24,7 @@ include("connection.php");
             extract($lista);
 
                 //Creamos consulta para hacer el insert
-                $subconsulta = 'INSERT INTO carro_'.$usuario.'(nombre,categoria,descripcion,precio,porcentaje_oferta) VALUES ("'.$nombre.'","'.$categoria.'","'.$descripcion.'",'.$precio.','.$porcentaje_oferta.');';
+                $subconsulta = 'INSERT INTO carro(nombre,categoria,descripcion,precio,porcentaje_oferta) VALUES ("'.$nombre.'","'.$categoria.'","'.$descripcion.'",'.$precio.','.$porcentaje_oferta.');';
 
                 $result_sub = mysqli_query($conexion,$subconsulta);
                 echo($result_sub);

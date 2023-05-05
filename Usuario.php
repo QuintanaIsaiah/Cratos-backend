@@ -17,32 +17,5 @@ else{
     print_r("");
 }
 
-if($inputRecibido == null){
-    
-}
-else if($inputRecibido){
-    
-    include("connection.php");
-
-    //Creamos tabla carro_user
-    $consulta_c = 'CREATE TABLE IF NOT EXISTS carro_'.$inputRecibido.' (
-        id int auto_increment primary key,
-        nombre varchar(255),
-        categoria varchar(255),
-        descripcion varchar(255),
-        precio int,
-        porcentaje_oferta int    
-    );';
-
-    $result_c = mysqli_query($conexion,$consulta_c);
-    //echo($result_c);
-
-
-
-}
-else{
-    echo("ERROR");
-}
-
     
 ?>
