@@ -118,7 +118,9 @@
         categoria varchar(255),
         descripcion varchar(255),
         precio int,
-        porcentaje_oferta int    
+        porcentaje_oferta int,
+        id_nombre int,
+        constraint fk_usuarios FOREIGN KEY (id_nombre) REFERENCES Usuarios (id)
     );';
 
     $result_c = mysqli_query($conexion,$consulta_c);

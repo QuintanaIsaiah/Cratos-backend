@@ -9,8 +9,7 @@ header("Access-Control-Allow-Origin: http://localhost:3000");
 
 $inputRecibido = json_decode(file_get_contents('php://input'));
 
-$pro = $inputRecibido[0];
-$us = $inputRecibido[1];
+$us = $inputRecibido ->idUsuario;
 
 
 include("connection.php");
@@ -18,7 +17,7 @@ include("connection.php");
     //Hacemos consulta para mostrar todos los productos
     $conexion = $GLOBALS["conexion"];
 
-    $consulta = 'DELETE FROM Carro WHERE id = '.$pro.' AND id_nombre = '.$us.';';
+    $consulta = 'DELETE FROM Carro WHERE id_nombre = '.$us.';';
     $result = mysqli_query($conexion,$consulta);
 
     print_r($result);

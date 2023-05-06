@@ -22,7 +22,7 @@ include("connection.php");
     while($lista = mysqli_fetch_assoc($result3)){
         extract($lista);
             
-            echo json_encode("LA ID ES : ".$id);
+            echo json_encode($id);
     }
 
   
