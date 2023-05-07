@@ -9,12 +9,12 @@ header("Access-Control-Allow-Origin: http://localhost:3000");
 //Recogemos la información que nos pasen por POST 
 $inputRecibido = json_decode(file_get_contents('php://input'));
 
-$userInput = intval($inputRecibido[0]->idUsuario);
+$userInput = $inputRecibido[0];
 $id = $inputRecibido[1];
 
-//print_r("php nos retorna: " . $id);
+//print_r("php nos retorna idproducto: " . $id);
 
-//print_r("php nos retorna: " . $userInput);
+//print_r("php nos retorna nombre: " . $userInput);
 
 
 include("connection.php");

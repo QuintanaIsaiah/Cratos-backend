@@ -9,7 +9,7 @@ header("Access-Control-Allow-Origin: http://localhost:3000");
 
 $inputRecibido = json_decode(file_get_contents('php://input'));
 
-$us = $inputRecibido ->idUsuario;
+$us = $inputRecibido;
 
 
 include("connection.php");

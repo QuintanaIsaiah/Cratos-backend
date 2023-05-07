@@ -9,13 +9,13 @@ header("Access-Control-Allow-Origin: http://localhost:3000");
 
 $inputRecibido = json_decode(file_get_contents('php://input'));
 
-//$inputRecibido2 = "";
 
 if($inputRecibido){
-    print_r($inputRecibido->usuario);
+    $nombree = $inputRecibido->usuario;
+    print_r($nombree);
 }
 else{
-    print_r("Pedro");
+    print_r("");
 }
 
 /*
