@@ -99,7 +99,8 @@
                 //echo($result2);
             }
         }
-
+        
+        //Para que no se vuelvan a crear cuando los eliminemos hay que comentar los "insertarProductos"
         //Productos
         insertarProductos("producto1","montanya","lorem",48,0);
         insertarProductos("producto2","natacion","lorem",60,0);
@@ -109,7 +110,7 @@
         insertarProductos("producto6","natacion","lorem",70,50);
         insertarProductos("producto7","natacion","lorem",90,0);
         insertarProductos("producto8","tierra","lorem",52,0);
-
+        
     
     //Creamos tabla carro
     $consulta_c = 'CREATE TABLE IF NOT EXISTS carro (
