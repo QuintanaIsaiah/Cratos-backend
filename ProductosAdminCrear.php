@@ -15,24 +15,6 @@ $r_descripcion = $inputRecibido[2];
 $r_precio = $inputRecibido[3];
 $r_porcentaje_precio = $inputRecibido[4];
 
-
-if(isset($_FILES['imagen'])){
-    $nombreArchivo = $_FILES['file']['name']; // Obtener el nombre del archivo subido
-    $rutaTemporal = $_FILES['file']['tmp_name']; // Obtener la ubicación temporal del archivo subido
-
-    // Ruta de destino donde quieres guardar la imagen
-    $rutaDestino = 'C:\Users\Alex\Desktop\cratoss-proyecto\Cratos-tfg\src\Main\img\\' . $nombreArchivo;
-
-    // Mover el archivo a la ubicación deseada
-    if (move_uploaded_file($rutaTemporal, $rutaDestino)) {
-        // Archivo movido exitosamente
-        echo 'Archivo subido y guardado correctamente.';
-    } else {
-        // Error al mover el archivo
-        echo 'Error al mover el archivo.';
-}
-}
-
 include("connection.php");
 
 //Creamos consulta select para recoger toda info del id pasado por input
