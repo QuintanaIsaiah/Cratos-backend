@@ -14,17 +14,20 @@ $u_correo = $inputRecibido[1];
 $u_edad = $inputRecibido[2];
 $u_contrasenya = $inputRecibido[3];
 $u_is_admin = $inputRecibido[4];
-$u_id = $inputRecibido[5];
 
 include("connection.php");
 
 //Creamos consulta select para recoger toda info del id pasado por input
-$consulta = 'UPDATE Usuarios SET nombre = "'.$u_nombre.'", correo = "'.$u_correo.'", edad = '.$u_edad.', contrasenya = "'.$u_contrasenya.'", admin = '.$u_is_admin.' WHERE id = '.$u_id.';';
-
-// $consulta = 'UPDATE usuarios SET nombre = "'.$u_nombre.'",correo = "'.$u_correo.'",edad = "'.$u_edad.'",contrasenya = '.$u_contrasenya.', admin = '.$u_is_admin.' WHERE id= '.$u_id.' ;';
-//$sql = "UPDATE productos SET nombre = '$nombre', categoria = '$categoria', descripcion = '$descripcion', precio = '$precio' WHERE id = '$idProducto'";
+$consulta = 'SELECT * FROM usuarios WHERE nombre = "'.$u_nombre.'" ;';
 $result = mysqli_query($conexion,$consulta);
             
-echo($result);
-
+if(mysqli_num_rows($result) > 0){
+    echo("Ya existe ");
+} else{
+     $consulta2 = 'INSERT INTO usuarios(nombre, correo, edad, contrasenya, admin) 
+                   VALUES ("'.$u_nombre.'", "'.$u_correo.'", "'.$u_edad.'", "'.$u_contrasenya.'", '.$u_is_admin.');';
+    
+    $result2 = mysqli_query($conexion,$consulta2);
+    echo($result2);
+}
 ?>

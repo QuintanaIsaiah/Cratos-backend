@@ -60,7 +60,7 @@
                 //si el contador esta vacio, no hay usuaior y lo inserta
                 if($contador == ""){
                     
-                    $consulta3_1 = 'INSERT INTO usuarios(nombre,contrasenya, admin) VALUES("admin","admin", true);';
+                    $consulta3_1 = 'INSERT INTO usuarios(nombre, correo, edad, contrasenya, admin) VALUES("admin","admin@gmail.com", 0, "admin", true);';
 
                     $res3_1 = mysqli_query($conexion,$consulta3_1);
 
