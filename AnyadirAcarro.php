@@ -30,7 +30,7 @@ while ($lista = mysqli_fetch_assoc($resp)) {
     //print_r("".$userInput);
 
     //Creamos consulta para hacer el insert
-    $subconsulta = 'INSERT INTO carro(nombre,categoria,descripcion,precio,porcentaje_oferta,id_nombre) VALUES ("' . $nombre . '","' . $categoria . '","' . $descripcion . '",' . $precio . ',' . $porcentaje_oferta . ','.$userInput.')';
+    $subconsulta = 'INSERT INTO carro(nombre,categoria,descripcion,precio,porcentaje_oferta,imagen,id_nombre) VALUES ("' . $nombre . '","' . $categoria . '","' . $descripcion . '",' . $precio . ',' . $porcentaje_oferta . ',"'.$imagen.'",'.$userInput.')';
 
     $result_sub = mysqli_query($conexion, $subconsulta);
     echo $result_sub;
