@@ -26,8 +26,8 @@ $consulta99 = 'SELECT * FROM productos WHERE nombre = "'.$r_nombre.'" ;';
                 echo("Ya existe ");
             }
             else{
-                $consulta22 = 'INSERT INTO productos(nombre,categoria,descripcion,precio,porcentaje_oferta) VALUES ("'.$r_nombre.'","'.$r_categoria.'","'.$r_descripcion.'",'.$r_precio.','.$r_porcentaje_precio.');';
+                $consulta22 = 'INSERT INTO productos(nombre,categoria,descripcion,precio,porcentaje_oferta,imagen) VALUES ("'.$r_nombre.'","'.$r_categoria.'","'.$r_descripcion.'",'.$r_precio.','.$r_porcentaje_precio.',"'.$r_imagen.'");';
                 $result2 = mysqli_query($conexion,$consulta22);
                 echo($result2);
             }
-?>
+?>-

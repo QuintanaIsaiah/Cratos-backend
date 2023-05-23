@@ -76,7 +76,8 @@
         categoria varchar(255),
         descripcion varchar(255),
         precio int,
-        porcentaje_oferta int
+        porcentaje_oferta int,
+        imagen BLOB
     );';
     
     $res4 = mysqli_query($conexion,$consulta4);
