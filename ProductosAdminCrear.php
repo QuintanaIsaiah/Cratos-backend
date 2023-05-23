@@ -14,6 +14,31 @@ $r_categoria = $inputRecibido[1];
 $r_descripcion = $inputRecibido[2];
 $r_precio = $inputRecibido[3];
 $r_porcentaje_precio = $inputRecibido[4];
+$r_imagen = $inputRecibido[5];
+
+/*
+// Directorio de destino para guardar las imágenes
+$directorioDestino = 'C:\xampp\htdocs\Cratos-backend\prueba';
+echo($directorioDestino."|");
+
+// Genera un nombre de archivo único para evitar conflictos
+$nombreArchivo = 11 . '.png';
+echo($nombreArchivo."|");
+
+// Ruta completa del archivo de destino
+$rutaDestino = $directorioDestino . $nombreArchivo;
+echo($rutaDestino."|");
+
+// Guarda el contenido de la imagen en el archivo de destino
+if (file_put_contents($rutaDestino, base64_decode($r_imagen))) {
+  // El archivo se guardó correctamente
+  // Puedes hacer cualquier otra operación necesaria aquí
+  echo 'Imagen guardada correctamente.';
+} else {
+  // Error al guardar el archivo
+  echo 'Error al guardar la imagen.';
+}
+*/
 
 include("connection.php");
 
