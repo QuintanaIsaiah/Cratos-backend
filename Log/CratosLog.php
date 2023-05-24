@@ -31,7 +31,8 @@ if (!mysqli_select_db($conexion, $database)) {
 $consulta = 'CREATE TABLE IF NOT EXISTS Log (
     id INT AUTO_INCREMENT PRIMARY KEY,
     user VARCHAR(255),
-    action VARCHAR(255)
+    action VARCHAR(255),
+    `date` TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );';
 
 $result = mysqli_query($conexion, $consulta);

@@ -28,10 +28,11 @@ $inputRecibido = json_decode(file_get_contents('php://input'));
 
 $usuario = $inputRecibido->usuario;
 $accion = $inputRecibido->accion;
+$fecha = $inputRecibido->fecha;
 
 if ($usuario) {
 // Insertamos el registro en la tabla Log
-$consulta = 'INSERT INTO Log (user, action) VALUES ("'.$usuario.'", "'.$accion.'");';
+$consulta = 'INSERT INTO Log (user, action, `date`) VALUES ("'.$usuario.'", "'.$accion.'", "'.$fecha.'");';
 $result = mysqli_query($conexion, $consulta);
 }
 
