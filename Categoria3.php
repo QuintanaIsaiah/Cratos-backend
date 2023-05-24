@@ -12,7 +12,7 @@ include("connection.php");
     //Hacemos consulta para mostrar todos los productos
     $conexion = $GLOBALS["conexion"];
 
-    $consulta3 = 'SELECT * FROM productos WHERE porcentaje_oferta = 0 AND categoria = "montanya";';
+    $consulta3 = 'SELECT * FROM productos WHERE porcentaje_oferta = 0 AND categoria = "esqui";';
     $result3 = mysqli_query($conexion,$consulta3);
 
     while($lista = mysqli_fetch_all($result3)){

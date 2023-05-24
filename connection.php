@@ -111,16 +111,20 @@
 
         
 
-        insertarProductos("producto1","montanya","lorem",48,0,$b);
-        insertarProductos("producto2","natacion","lorem",60,0,$b);
-        insertarProductos("producto3","tierra","lorem",35,20,$b);
-        insertarProductos("producto4","tierra","lorem",32,0,$l);
-        insertarProductos("producto5","montanya","lorem",30,0,$l);
-        insertarProductos("producto6","natacion","lorem",70,50,$n);
-        insertarProductos("producto7","natacion","lorem",90,0,$n);
-        insertarProductos("producto8","tierra","lorem",52,0,$n);
-        insertarProductos("Corrector de brazada","Natacion","Corrector de brazada Finis Forearm Fulcrum Senior amarillo",31,30,$l);
-        insertarProductos("fgfdgfdgdf","Natacion","kdskfkdskfdksfk",10,50,$n);
+        insertarProductos("Arnés acuatico","natacion","Tiene correas ajustables que se colocan alrededor del cuerpo del usuario para asegurar un ajuste cómodo y seguro. Estas correas están hechas de materiales resistentes al agua, como nylon o poliéster, que son duraderos y capaces de soportar el peso del usuario en el agua.",58,0,$arnes);
+        insertarProductos("Grua B540 pool","natacion","Capacidad de girar o desplazarse horizontalmente a lo largo del borde de la piscina. Esto permite una mayor versatilidad al posicionar la grúa en el lugar óptimo para realizar la transferencia de manera eficiente y segura.",460,0,$gruaPiscina);
+        insertarProductos("Protesis ","natacion","La prótesis de pierna acuática se construye con materiales resistentes al agua y a la corrosión, lo que garantiza su durabilidad y rendimiento en entornos acuáticos. Su diseño se adapta a la anatomía del usuario, proporcionando un ajuste seguro y cómodo.",185,50,$protesis1);
+        insertarProductos("Silla de L33 Pool","natacion","La silla acuática cuenta con un diseño resistente al agua y a la corrosión, utilizando materiales duraderos y de alta calidad que garantizan su longevidad y funcionamiento óptimo en ambientes acuáticos. Está construida con una estructura robusta y estable que brinda un soporte seguro durante el uso.",88,0,$sillaPiscina);
+
+        insertarProductos("Tabla de Surf","surf","La tabla de surf adaptada cuenta con características que la hacen accesible y segura. Puede tener una plataforma más amplia y estable para proporcionar un mayor equilibrio, especialmente para aquellos con dificultades de movilidad.",210,0,$tablaSurf);
+        insertarProductos("Asiento pra tabla","surf","La silla proporciona un asiento cómodo con respaldo y apoyabrazos, ofreciendo soporte y estabilidad al usuario mientras surfea. Puede tener correas de seguridad y sujetadores ajustables para garantizar que el usuario esté bien sujeto a la silla y evite caídas o deslizamientos.",45,50,$sillaSurf);
+        insertarProductos("Silla para la arena","surf","La silla adaptada para la playa es un dispositivo diseñado para brindar accesibilidad y comodidad a las personas con discapacidades al disfrutar de la playa y sus alrededores. Esta silla está especialmente diseñada para navegar sobre arena suelta y terrenos irregulares, permitiendo a los usuarios moverse con facilidad y seguridad.",90,0,$sillaPlaya);
+        insertarProductos("Traje Neopreno","surf","El diseño del traje de neopreno puede incluir aberturas estratégicamente ubicadas, cierres ajustables o velcros para facilitar la colocación y la extracción del traje, incluso para aquellos con dificultades para mover ciertas partes del cuerpo. ",52,0,$trajeSurf);
+
+        insertarProductos("Esqui HG503 ADT","esqui","Es un equipo diseñado para brindar accesibilidad, estabilidad y comodidad a aquellos con movilidad reducida, permitiéndoles disfrutar de la emoción y la experiencia del esquí acuático de manera segura y satisfactoria.",986,0,$esquiPro);
+        insertarProductos("Esqui MonKit","esqui","Es un equipo diseñado para deslizarse sobre el agua mientras es arrastrado por una embarcación a motor. Esta tabla combina características del snowboard y el surf, ofreciendo una emocionante experiencia de deslizamiento sobre el agua.",600,0,$esquiMon);
+        insertarProductos("Esqui DuoGe","esqui","Equipo diseñado para aclope de silla, u tipo de sijecció para todo tipo adaptabilidad de buenos material resistentes al agua",360,0,$esquiDuo);
+        insertarProductos("Cuerdas y asas","esqui","Equipo necesario para poder aclopar la tabla con un embarque a motor o vela para disfritar la velocidad y seguridad",70,0,$esquiCuerda);
 
         
     
