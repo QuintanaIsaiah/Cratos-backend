@@ -110,7 +110,7 @@
         include("imagen.php");
 
         
-
+        /*
         insertarProductos("Arnés acuatico","natacion","Tiene correas ajustables que se colocan alrededor del cuerpo del usuario para asegurar un ajuste cómodo y seguro. Estas correas están hechas de materiales resistentes al agua, como nylon o poliéster, que son duraderos y capaces de soportar el peso del usuario en el agua.",58,0,$arnes);
         insertarProductos("Grua B540 pool","natacion","Capacidad de girar o desplazarse horizontalmente a lo largo del borde de la piscina. Esto permite una mayor versatilidad al posicionar la grúa en el lugar óptimo para realizar la transferencia de manera eficiente y segura.",460,0,$gruaPiscina);
         insertarProductos("Protesis ","natacion","La prótesis de pierna acuática se construye con materiales resistentes al agua y a la corrosión, lo que garantiza su durabilidad y rendimiento en entornos acuáticos. Su diseño se adapta a la anatomía del usuario, proporcionando un ajuste seguro y cómodo.",185,50,$protesis1);
@@ -125,7 +125,7 @@
         insertarProductos("Esqui MonKit","esqui","Es un equipo diseñado para deslizarse sobre el agua mientras es arrastrado por una embarcación a motor. Esta tabla combina características del snowboard y el surf, ofreciendo una emocionante experiencia de deslizamiento sobre el agua.",600,0,$esquiMon);
         insertarProductos("Esqui DuoGe","esqui","Equipo diseñado para aclope de silla, u tipo de sijecció para todo tipo adaptabilidad de buenos material resistentes al agua",360,0,$esquiDuo);
         insertarProductos("Cuerdas y asas","esqui","Equipo necesario para poder aclopar la tabla con un embarque a motor o vela para disfritar la velocidad y seguridad",70,0,$esquiCuerda);
-
+        */
         
     
     //Creamos tabla carro
